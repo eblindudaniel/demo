@@ -1,0 +1,71 @@
+## Anomaly and causality detection in Maritime Data
+
+```
+Daniel Blindu
+```
+
+# Scope
+
+Anomaly detection in maritime data can help with legal investigations or help
+comercial transport
+
+
+
+AIS and weather Data sample from Spire Maritime
+
+```
+source:spire.com
+```
+
+**Bayesian Networks** using two models:
+
+1. **Time series** model
+2. **Track summary** model
+
+
+# Tools
+
+CaMML (Causal discovery via Minimum Message Length)
+
+```
+source:bayesian-intelligence.com
+```
+
+Data is combined, cleaned,
+fed to the tool and also
+refined and re-introduced in
+the learner via the two
+methods:
+● Time Series
+● Track Summary
+
+
+# Usage
+
+You can use **discrete_time_series.py** or **discrete_track_summaries.py**
+
+One is taking AIS data and checks anomalies based on time (one ship in the
+sea can be missing at 10 AM at specific location, which is bad because usually
+it’s there at that time)
+
+Another one is track records and its’ used to show for example that ships in
+the middle of the ocean usually are bigger
+
+
+# Usage
+
+When you run one of the scripts it will download some AIS sample and
+
+```
+● Clean data
+● Make continuous variable into discrete (instead of ship 500m -> ship has
+value ‘large’)
+● Output a new CSV file
+```
+
+# Usage
+
+Run camml_gui.sh with the new CSV
+
+
+
